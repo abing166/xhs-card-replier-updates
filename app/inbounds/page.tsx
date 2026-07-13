@@ -221,14 +221,16 @@ export default function InboundsPage() {
                       <Td>{r.disease}</Td>
                       <Td>{r.phone || "-"}</Td>
                       <Td className="max-w-xs whitespace-normal text-muted">
-                        {r.summary}
+                        <span className="line-clamp-2">{r.summary}</span>
                       </Td>
                       <Td>
                         <StatusBadge status={r.status} />
                       </Td>
                       <Td className="text-muted">{r.sentAt || "-"}</Td>
                       <Td className="max-w-xs whitespace-normal text-danger">
-                        {r.status === "failed" ? r.failReason || "-" : "-"}
+                        <span className="line-clamp-2">
+                          {r.status === "failed" ? r.failReason || "-" : "-"}
+                        </span>
                       </Td>
                       <Td>
                         <div className="flex items-center gap-1.5">

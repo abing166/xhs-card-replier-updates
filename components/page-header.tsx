@@ -19,7 +19,9 @@ export function PageHeader({
           <p className="mt-0.5 text-sm text-muted text-pretty">{description}</p>
         )}
       </div>
-      {right && <div className="flex items-center gap-2">{right}</div>}
+      {right && (
+        <div className="flex shrink-0 items-center gap-2">{right}</div>
+      )}
     </div>
   )
 }

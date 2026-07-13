@@ -60,16 +60,16 @@ export default function AccountsPage() {
           <>
             <button
               onClick={add}
-              className="inline-flex h-9 items-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-white hover:opacity-90"
+              className="inline-flex h-9 items-center gap-1.5 whitespace-nowrap rounded-md bg-primary px-3 text-sm font-medium text-white hover:opacity-90"
             >
-              <Plus className="size-4" />
-              新增账号并扫码登录
+              <Plus className="size-4 shrink-0" />
+              新增账号
             </button>
             <button
               onClick={() => mutate()}
-              className="inline-flex h-9 items-center gap-1.5 rounded-md border bg-surface px-3 text-sm text-foreground hover:bg-slate-50"
+              className="inline-flex h-9 items-center gap-1.5 whitespace-nowrap rounded-md border bg-surface px-3 text-sm text-foreground hover:bg-slate-50"
             >
-              <RefreshCw className="size-4" />
+              <RefreshCw className="size-4 shrink-0" />
               刷新状态
             </button>
           </>
